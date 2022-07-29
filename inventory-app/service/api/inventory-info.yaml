@@ -25,7 +25,7 @@ spec:
       /api/v1/inventorys/{id}/name:
         put:
           tags:
-            - counting-api
+            - inventorycounting-api
           operationId: updateName
           parameters:
             - name: id
@@ -49,7 +49,7 @@ spec:
       /api/v1/inventorys/{id}/count:
         put:
           tags:
-            - counting-api
+            - inventorycounting-api
           operationId: updateCount
           parameters:
             - name: id
@@ -74,7 +74,7 @@ spec:
       /api/v1/inventorys:
         get:
           tags:
-            - counting-api
+            - inventorycounting-api
           operationId: list
           parameters:
             - name: name
@@ -104,7 +104,7 @@ spec:
                       $ref: '#/components/schemas/inventory'
         post:
           tags:
-            - counting-api
+            - inventorycounting-api
           operationId: create
           requestBody:
             content:
@@ -122,7 +122,7 @@ spec:
       /api/v1/inventorys/{id}/increment:
         post:
           tags:
-            - counting-api
+            - inventorycounting-api
           operationId: increment
           parameters:
             - name: id
@@ -140,7 +140,7 @@ spec:
       /api/v1/inventorys/{id}/decrement:
         post:
           tags:
-            - counting-api
+            - inventorycounting-api
           operationId: decrement
           parameters:
             - name: id
@@ -158,7 +158,7 @@ spec:
       /api/v1/inventorys/{id}:
         get:
           tags:
-            - counting-api
+            - inventorycounting-api
           operationId: get
           parameters:
             - name: id
